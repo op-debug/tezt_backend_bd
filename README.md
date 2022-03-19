@@ -7,7 +7,7 @@ SS<br/>
 ERD
 <br/>
 <br/>
-<img src:"https://github.com/op-debug/tezt_backend_bd/blob/master/ss/erd.JPG">
+<img src="https://github.com/op-debug/tezt_backend_bd/blob/master/ss/erd.JPG">
 
 
 <br/><br/><br/><br/><br/>
