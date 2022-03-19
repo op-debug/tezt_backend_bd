@@ -1,0 +1,854 @@
+{
+	"info": {
+		"_postman_id": "ed1d5176-c027-45fa-b09d-7ff456c4794f",
+		"name": "Test_BD",
+		"description": "endpoit api postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Jabatan",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "Manajer",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/jabatan/create",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"jabatan",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/jabatan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"jabatan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/jabatan/getdatabyid",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"jabatan",
+								"getdatabyid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Staff",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/jabatan/update",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"jabatan",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/jabatan/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"jabatan",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Karyawan",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "Priyo Subarkah",
+									"type": "text"
+								},
+								{
+									"key": "id_jabatan",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Jl Kalimati No 32 RT 01 RW 32, Kalasan, Sleman, Yogyakarta",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "Laki-Laki",
+									"type": "text"
+								},
+								{
+									"key": "agama",
+									"value": "Islam",
+									"type": "text"
+								},
+								{
+									"key": "tgl_bergabung",
+									"value": "'12-11-2022'",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/karyawan/create",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"karyawan",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:4000/karyawan",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"karyawan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/karyawan/getdatabyid",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"karyawan",
+								"getdatabyid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "Priyo Subarkahh",
+									"type": "text"
+								},
+								{
+									"key": "id_jabatan",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Jl Kalimati No 32 RT 01 RW 32, ",
+									"type": "text"
+								},
+								{
+									"key": "jenis_kelamin",
+									"value": "Laki-Laki",
+									"type": "text"
+								},
+								{
+									"key": "agama",
+									"value": "Islam",
+									"type": "text"
+								},
+								{
+									"key": "tgl_bergabung",
+									"value": "12-11-2022",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/karyawan/update",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"karyawan",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/karyawan/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"karyawan",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Keluarga",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nama",
+									"value": "Rafka Alfariski subarkah",
+									"type": "text"
+								},
+								{
+									"key": "pekerjaan",
+									"value": "Sekolah",
+									"type": "text"
+								},
+								{
+									"key": "hubungan",
+									"value": "Anak",
+									"type": "text"
+								},
+								{
+									"key": "id_karyawan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/keluarga/create",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"keluarga",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/keluarga",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"keluarga"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/keluarga/getdatabyid",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"keluarga",
+								"getdatabyid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Kurnia Dwi Rahmawati",
+									"type": "text"
+								},
+								{
+									"key": "pekerjaan",
+									"value": "Ibu Rumah Tangga",
+									"type": "text"
+								},
+								{
+									"key": "hubungan",
+									"value": "Istri",
+									"type": "text"
+								},
+								{
+									"key": "id_karyawan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/keluarga/update",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"keluarga",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/keluarga/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"keluarga",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Userlogin",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "opdebug",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "id_karyawan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/userlogin/create",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"userlogin",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "View All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:4000/userlogin",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"userlogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByID",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_karyawan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/userlogin/getdatabyid",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"userlogin",
+								"getdatabyid"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_karyawan",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "op",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/userlogin/update",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"userlogin",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id_karyawan",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:4000/userlogin/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"userlogin",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "admin",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "123456",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

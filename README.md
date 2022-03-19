@@ -18,7 +18,8 @@ run migration database : npm run migrate
 setting port di .env
 <br/>
 run app : npm run start
-
+<br>
+Domunentasi Postman : postman collection/
 <br>
 <table>
     <tr>
@@ -52,7 +53,6 @@ run app : npm run start
         <td>
             <b>header = </b><br>
             x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            
             <b>body = </b><br>
             nama : Manajer</td>
         <td>http://localhost:[PORT]/jabatan/create</td>
