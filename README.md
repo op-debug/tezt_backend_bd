@@ -7,7 +7,7 @@ SS<br/>
 ERD
 <br/>
 <br/>
-<img src="https://github.com/op-debug/tezt_backend_bd/blob/master/ss/erd.JPG">
+<img src:"https://github.com/op-debug/tezt_backend_bd/blob/master/ss/erd.JPG">
 
 
 <br/><br/><br/><br/><br/>
@@ -32,7 +32,7 @@ Domunentasi Postman : postman collection/
         <td>1</td>
         <td>[POST]</td>
         <td>
-            body = <br>
+            body : <br>
             username: admin<br/>
             password : 123456 
         </td>
@@ -42,8 +42,8 @@ Domunentasi Postman : postman collection/
         <td>2</td>
         <td>[GET]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs
+            <b>header : </b><br>
+            x-access-token : xxxx
         </td>
         <td>http://localhost:[PORT]/jabatan</td>
     </tr>
@@ -51,9 +51,9 @@ Domunentasi Postman : postman collection/
         <td>3</td>
         <td>[POST]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             nama : Manajer</td>
         <td>http://localhost:[PORT]/jabatan/create</td>
     </tr>
@@ -61,9 +61,9 @@ Domunentasi Postman : postman collection/
         <td>4</td>
         <td>[POST]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br>
+            <b>body : </b><br>
             id : 1</td>
         <td>http://localhost:[PORT]/jabatan/getdatabyid</td>
     </tr>
@@ -71,9 +71,9 @@ Domunentasi Postman : postman collection/
         <td>5</td>
         <td>[PUT]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             id : 1<br/>
             nama: Staff
         </td>
@@ -83,9 +83,9 @@ Domunentasi Postman : postman collection/
         <td>6</td>
         <td>[DELETE]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             id_jabatan : 1</td>
         <td>http://localhost:[PORT]/jabatan/delete</td>
     </tr>
@@ -93,8 +93,8 @@ Domunentasi Postman : postman collection/
         <td>7</td>
         <td>[GET]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br>
         </td>
         <td>http://localhost:[PORT]/karyawan</td>
     </tr>
@@ -102,9 +102,9 @@ Domunentasi Postman : postman collection/
         <td>8</td>
         <td>[POST]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             id_jabatan: 0<br>
             nama : priyo subarkah<br/>
             alamat: Jl Kalimati No 33, Kalasan Sleman, Yogyakarta<br>
@@ -118,9 +118,9 @@ Domunentasi Postman : postman collection/
         <td>9</td>
         <td>[POST]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             id_karyawan : 0</td>
         <td>http://localhost:[PORT]/karyawan/update/getdata</td>
     </tr>
@@ -128,9 +128,9 @@ Domunentasi Postman : postman collection/
         <td>10</td>
         <td>[PUT]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             id_karyawan: 0<br/>
             id_jabatan : 0<br/>
             nama : priyo subarkah<br/>
@@ -146,9 +146,9 @@ Domunentasi Postman : postman collection/
         <td>11</td>
         <td>[DELETE]</td>
         <td>
-        <b>header = </b><br>
-        x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-        <b>body = </b><br>
+        <b>header : </b><br>
+        x-access-token : xxxx<br/>
+        <b>body : </b><br>
         id_karyawan : 0</td>
         <td>http://localhost:[PORT]/karyawan/delete</td>
     </tr>
@@ -156,8 +156,8 @@ Domunentasi Postman : postman collection/
         <td>12</td>
         <td>[GET]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br>
         </td>
         <td>http://localhost:[PORT]/keluarga</td>
     </tr>
@@ -165,9 +165,9 @@ Domunentasi Postman : postman collection/
         <td>13</td>
         <td>[POST]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             id_karyawan : 0<br/>
             nama: Kurnia Dwi Rahmawati<br>
             pekerjaan : Ibu Rumah Tangga<br/>
@@ -179,9 +179,9 @@ Domunentasi Postman : postman collection/
         <td>14</td>
         <td>[POST]</td>
         <td>
-        <b>header = </b><br>
-        x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-        <b>body = </b><br>
+        <b>header : </b><br>
+        x-access-token : xxxx<br/>
+        <b>body : </b><br>
         id_keluarga : 0</td>
         <td>http://localhost:[PORT]/karyawan/update/getdata</td>
     </tr>
@@ -189,9 +189,9 @@ Domunentasi Postman : postman collection/
         <td>15</td>
         <td>[PUT]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body =</b> <br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body :</b> <br>
             id_keluarga : 0<br/>
             id_karyawan : 0<br/>
             nama: Kurnia Dwi Rahmawati<br>
@@ -205,9 +205,9 @@ Domunentasi Postman : postman collection/
         <td>16</td>
         <td>[DELETE]</td>
         <td>
-        <b>header = </b><br>
-        x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-        <b>body = </b><br>
+        <b>header : </b><br>
+        x-access-token : xxxx<br/>
+        <b>body : </b><br>
         id_keluarga : 0</td>
         <td>http://localhost:[PORT]/keluarga/delete</td>
     </tr>
@@ -216,8 +216,8 @@ Domunentasi Postman : postman collection/
         <td>17</td>
         <td>[GET]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
         </td>
         <td>http://localhost:[PORT]/userlogin</td>
     </tr>
@@ -225,9 +225,9 @@ Domunentasi Postman : postman collection/
         <td>18</td>
         <td>[POST]</td>
         <td>
-            <b>header = </b><br>
-            x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-            <b>body = </b><br>
+            <b>header : </b><br>
+            x-access-token : xxxx<br/>
+            <b>body : </b><br>
             id_karyawan : 1<br/>
             username: opdebug<br>
             password : 123456<br/>
@@ -239,9 +239,9 @@ Domunentasi Postman : postman collection/
         <td>19</td>
         <td>[POST]</td>
         <td>
-        <b>header = </b><br>
-        x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-        <b>body = </b><br>
+        <b>header : </b><br>
+        x-access-token : xxxx<br/>
+        <b>body : </b><br>
         id_karyawan : 1</td>
         <td>http://localhost:[PORT]/userlogin/getdatabyid</td>
     </tr>
@@ -250,9 +250,9 @@ Domunentasi Postman : postman collection/
         <td>19</td>
         <td>[PUT]</td>
         <td>
-        <b>header = </b><br>
-        x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-        <b>body = </b><br>
+        <b>header : </b><br>
+        x-access-token : xxxx<br/>
+        <b>body : </b><br>
         id_karyawan : 1</td>
         username : opdebug</td>
         password : 123456</td>
@@ -263,9 +263,9 @@ Domunentasi Postman : postman collection/
         <td>19</td>
         <td>[DELETE]</td>
         <td>
-        <b>header = </b><br>
-        x-access-token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFkbWluIiwiaWF0IjoxNjQ3NjUyNzc4LCJleHAiOjE2NDc3MzkxNzh9.5J6LcRb8odCa5IpFEcRWG1hEbN5QpuBI4xvR-wAmMWs<br/>
-        <b>body = </b><br>
+        <b>header : </b><br>
+        x-access-token : xxxx<br/>
+        <b>body : </b><br>
         is_karyawan : id_karyawan</td>
         <td>http://localhost:[PORT]/userlogin/delete</td>
     </tr>
